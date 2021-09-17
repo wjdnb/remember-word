@@ -1,30 +1,41 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="wrapper">
+    <router-view />
   </div>
-  <router-view />
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  margin: 0;
+  font-family: inconsolata;
 }
 
-#nav {
-  padding: 30px;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+li {
+  list-style: none;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+@font-face {
+  font-family: "powerline";
+  src: url("./assets/font/MonofurForPowerline.woff2"); /* IE9 Compat Modes */
+  src: url("./assets/font/MonofurForPowerline.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/font/MonofurForPowerline.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/font/MonofurForPowerline.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "inconsolata";
+  src: url("./assets/font/Inconsolata-Regular.woff2"); /* IE9 Compat Modes */
+  src: url("./assets/font/Inconsolata-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/font/Inconsolata-Regular.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/font/Inconsolata-Regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
 }
 </style>
